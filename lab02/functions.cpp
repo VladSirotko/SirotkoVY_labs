@@ -2,7 +2,7 @@
 #include <cmath>
 #include <algorithm>
 
-void Polynom::CalculateValue(double x=1.0)
+void Polynom::CalculateValue(double x=1.0)//TODO функцыя павінна рабіць толькі адно дзеянне, а вылічэнне і вывад на экран гэта 2 дзеянні
 { int s=Poly[n-1];
 
  for(int i=n-2;i>=0;i--)
@@ -10,7 +10,7 @@ void Polynom::CalculateValue(double x=1.0)
  cout<<s;
 }
 
-#endif
+#endif//??????????????
 Polynom::Polynom(int k)
 {
     n=k;
@@ -60,7 +60,7 @@ Polynom & Polynom::operator=(const Polynom & rhs)
     }
     return *this;
 }
-Polynom Polynom::operator+(const Polynom & rhs) const
+Polynom Polynom::operator+(const Polynom & rhs) const//TODO аналагічна
 {   int k=std::max(n,rhs.n);
     Polynom sum(k);
     for(int i = 0; i <rhs.n; i++)
@@ -75,7 +75,7 @@ Polynom Polynom::operator+(const Polynom & rhs) const
    cout<<sum;
  return 0;
 }
-Polynom Polynom::operator-(const Polynom & rhs) const
+Polynom Polynom::operator-(const Polynom & rhs) const//TODO аналагічна
 {   int k=std::max(n,rhs.n);
     Polynom dif(k);
     for(int i = 0; i <rhs.n; i++)
