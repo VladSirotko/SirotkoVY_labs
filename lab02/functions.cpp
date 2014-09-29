@@ -7,10 +7,10 @@ void Polynom::CalculateValue(double x=1.0)//TODO функцыя павінна �
 
  for(int i=n-2;i>=0;i--)
     s=s+Poly[i]*pow(x,i);
- cout<<s;
+return s;
 }
 
-#endif//??????????????
+
 Polynom::Polynom(int k)
 {
     n=k;
@@ -72,8 +72,8 @@ Polynom Polynom::operator+(const Polynom & rhs) const//TODO аналагічна
         sum[i] += Poly[i];
     }
 
-   cout<<sum;
- return 0;
+   
+ return sum;
 }
 Polynom Polynom::operator-(const Polynom & rhs) const//TODO аналагічна
 {   int k=std::max(n,rhs.n);
@@ -86,9 +86,9 @@ Polynom Polynom::operator-(const Polynom & rhs) const//TODO аналагічна
     {
         dif[i] += Poly[i];
     }
-    cout<<dif;
+    
 
-    return 0;
+    return dif;
 
 }
 
