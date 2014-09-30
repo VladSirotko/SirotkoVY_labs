@@ -22,6 +22,5 @@ int main()
     cout<<y*2.0<<endl;
     cout<<"Value of Poly: "<<endl;
     x.CalculateValue();
-    getch();
     return 0;
 }
